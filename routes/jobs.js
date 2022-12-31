@@ -5,3 +5,5 @@ const {getAllJobs, getJob, createJob, updateJob, deleteJob} = require('../contro
 
 router.route('/').post(createJob).get(getAllJobs)
 router.route('/:id').patch(updateJob).get(getJob).delete(deleteJob)
+
+module.exports = router;
